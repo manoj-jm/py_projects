@@ -17,6 +17,7 @@ if res.headers['CDN-RequestPullSuccess']== "True":
   temp = data['current']['temp_c'];
   sts = data['current']['condition']['text'];
   data = f'Current temperature of {x} is {temp} and it is {sts}'
+  print(f'Current temperature of {x} is {temp} and it is {sts}');
   e.say(data)
   e.runAndWait()
 
